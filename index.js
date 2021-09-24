@@ -1,7 +1,7 @@
 // index.js
 const { nextISSTimesForMyLocation } = require("./iss");
 
-let formatTimes = function (object) {
+const formatTimes = function (object) {
   for (let obj of object) {
     const datetime = new Date(0);
     datetime.setUTCSeconds(obj.risetime);
